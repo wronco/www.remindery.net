@@ -1,0 +1,35 @@
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta name="description"/>
+    <meta name="author"/>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <!-- Bootstrap core CSS
+    -->
+    <link href="/css/main.css" rel="stylesheet" type="text/css">/</link>
+    <!-- / Google Web fonts
+    -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">/</link>
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">/</link>
+    <meta content="<%= image_url("tiny_screenshot.png") %>" property="og:image"/>
+    {% include analytics.html %}
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    -->
+    <!--[if lte IE 9]
+      <%= stylesheet_link_tag "ie" %>
+      <%= javascript_include_tag "html5shiv" %>
+      <%= javascript_include_tag "respond.min" %>
+    -->
+  </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title></title>
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+</head>
