@@ -25,7 +25,7 @@ layout: default
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <div class="div-center">
-          <%= image_tag("ipad-portrait.png", class: "img-responsive") %>
+          <img src="/images/ipad-portrait.png" class="img-responsive" />
         </div>
       </div>
     </div>
@@ -70,14 +70,12 @@ layout: default
     <div class="row clearfix">
       <h2 class="section-subtitle services-subtitle">
         The tools you need for
-        <%= succeed "." do %>
-          <strong>outstanding customer retention</strong>
-        <% end %>
+        <strong>outstanding customer retention</strong>.
       </h2>
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="service-box clearfix col-xs-6 col-sm-6 col-md-3 col-lg-3">
           <div class="square">
-            <%= image_tag("icons/desktop.png", class: "img-responsive") %>
+            <img src="/images/icons/desktop.png" class="img-responsive" />
           </div>
           <h2>Improve And Track</h2>
           <p>
@@ -88,7 +86,7 @@ layout: default
         </div>
         <div class="service-box clearfix col-xs-6 col-sm-6 col-md-3 col-lg-3">
           <div class="square">
-            <%= image_tag("icons/atom.png", class: "img-responsive") %>
+            <img src="/images/icons/atom.png" class="img-responsive" />
           </div>
           <h2>Customizable Incentives</h2>
           <p>
@@ -97,7 +95,7 @@ layout: default
         </div>
         <div class="service-box clearfix col-xs-6 col-sm-6 col-md-3 col-lg-3">
           <div class="square">
-            <%= image_tag("icons/credit-card.png", class: "img-responsive") %>
+            <img src="/images/icons/credit-card.png" class="img-responsive" />
           </div>
           <h2>Repeat Business</h2>
           <p>
@@ -106,7 +104,7 @@ layout: default
         </div>
         <div class="service-box clearfix col-xs-6 col-sm-6 col-md-3 col-lg-3">
           <div class="square">
-            <%= image_tag("icons/brush.png", class: "img-responsive") %>
+            <img src="/images/icons/brush.png" class="img-responsive" />
           </div>
           <h2>Instant Setup</h2>
           <p>
@@ -114,7 +112,7 @@ layout: default
             in just a few seconds.
           </p>
           <p>
-            <%= link_to "Get Started Now", '#pricing-section', class: "btn btn-sm btn-success" %>
+            <a href="#pricing-section" class="btn btn-sm btn-success">Get Started Now</a>
           </p>
         </div>
       </div>
@@ -185,10 +183,10 @@ layout: default
     </div>
     <div class="row clearfix">
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <%= image_tag "logo-stripe.png" %>
+        <img src="/images/logo-stripe.png" />
       </div>
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-        <%= image_tag "logo-shopify.png", style: 'padding-top: 30px' %>
+        <img src="/images/logo-shopify.png" style='padding-top: 30px' />
       </div>
     </div>
     <div class="row clearfix">
@@ -197,17 +195,17 @@ layout: default
   </div>
 </section>
 <section id="pricing-section">
-  <%= render "shared/pricing_grid" %>
+  {% include pre_signup.html %}
 </section>
 <section id="faq-section">
-  <%= render "faq" %>
+  {% include faq.html %}
 </section>
 <section id="contact-section">
   <div class="container">
     <div class="row clearfix">
       <h2 class="section-subtitle">
         Got Questions? Email
-        <%= mail_to "hello@remindery.net" %>
+        <a href="mailto:hello@remindery.net">hello@remindery.net</a>
         We'll get back to you right away.
       </h2>
       <div class="carousel slide" data-interval="false" data-ride="carousel" id="carousel_slide_contact">
@@ -226,17 +224,17 @@ layout: default
                   <fieldset>
                     <div class="form-group col-lg-12">
                       <div class="input-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <input class="form-control" name="name" placeholder="Your Name" type="text">/</input>
+                        <input class="form-control" name="name" placeholder="Your Name" type="text">
                       </div>
                       <div class="input-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <input class="form-control" name="email" placeholder="Your E-Mail" type="text">/</input>
+                        <input class="form-control" name="email" placeholder="Your E-Mail" type="text">
                       </div>
                       <div class="input-group col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <input class="form-control" name="subject" placeholder="Message Subject" type="text">/</input>
+                        <input class="form-control" name="subject" placeholder="Message Subject" type="text">
                       </div>
                       <textarea class="form-control col-xs-12 col-sm-12 col-md-12 col-lg-12" cols="25" name="message" placeholder="Leave Your Message" rows="4"></textarea>
                       <div class="div-center clearfix">
-                        <input class="btn btn-custom-2 btn-lg btn-block" id="send-contact" name="submit" type="submit" value="Send Message">/</input>
+                        <input class="btn btn-custom-2 btn-lg btn-block" id="send-contact" name="submit" type="submit" value="Send Message">
                       </div>
                     </div>
                   </fieldset>
