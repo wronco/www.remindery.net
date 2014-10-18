@@ -14,9 +14,9 @@ Desktop
 */
 
 @media (min-width: 1920px) and (max-width: 2560px) {
-.call-to-action-home { background-image: image-url("bg-call-to-action-home-3000px.jpg"); background-repeat: no-repeat; background-position: center 100%; }
-#testimonials-section { background: image-url("slides/testimonials-slides/bg-slides-2560px.jpg") #433c4c no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-#call-to-action-section { background: image-url("bg-blurred-2560px.jpg") #272324 no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+.call-to-action-home { background-image: url("/images/bg-call-to-action-home-3000px.jpg"); background-repeat: no-repeat; background-position: center 100%; }
+#testimonials-section { background: url("/images/slides/testimonials-slides/bg-slides-2560px.jpg") #433c4c no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
+#call-to-action-section { background: url("/images/bg-blurred-2560px.jpg") #272324 no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
 }
 
 /*
@@ -26,7 +26,7 @@ Tablet / Phone
 */
 
 @media (min-width: 140px) and (max-width: 995px) {
-.call-to-action-home { max-width: 2560px; background-color: #030504; background-image: image-url("bg-call-to-action-home-3000px.jpg"); background-repeat: no-repeat; background-position: center 100%; color: white; width: 100%; }
+.call-to-action-home { max-width: 2560px; background-color: #030504; background-image: url("/images/bg-call-to-action-home-3000px.jpg"); background-repeat: no-repeat; background-position: center 100%; color: white; width: 100%; }
 }
 
 @media (min-width: 320px) and (max-width: 995px) {
