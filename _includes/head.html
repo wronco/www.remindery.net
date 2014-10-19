@@ -1,18 +1,21 @@
   <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <meta name="description"/>
-    <meta name="author"/>
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <!-- Bootstrap core CSS
-    -->
-    <link href="/css/main.css" rel="stylesheet" type="text/css">/</link>
-    <!-- / Google Web fonts
-    -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">/</link>
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">/</link>
-    <meta content="<%= image_url("tiny_screenshot.png") %>" property="og:image"/>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="/images/tiny_screenshot.png" property="og:image"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{ site.description }}">
+
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
     {% include analytics.html %}
+    {% comment %}
+    Fix Later
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
     -->
     <!--[if lte IE 9]
@@ -20,16 +23,12 @@
       <%= javascript_include_tag "html5shiv" %>
       <%= javascript_include_tag "respond.min" %>
     -->
-  </head>
+    {% endcomment %}
+    {% comment %}ShareThis{% endcomment %}
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "ur-fbdddc5f-d993-607c-3853-e90d13dc841a", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+    {% comment %}End ShareThis{% endcomment %}
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title></title>
-    <meta name="description" content="{{ site.description }}">
-
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>

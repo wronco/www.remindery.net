@@ -3,6 +3,7 @@
 // @codekit-prepend "jquery.turbolinks.js"
 // @codekit-prepend "jquery_ujs.js"
 // @codekit-prepend "bootstrap.js"
+
 // @codekit-prepend "bootstrap-datepicker.js"
 // @codekit-prepend "html5shiv.js"
 // @codekit-prepend "respond.js"

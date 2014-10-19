@@ -521,3 +521,58 @@ footer { background-color: #eeeeee; }
     }
   }
 }
+body.post{
+  background: #eeeeee;
+  padding: 40px 0;
+  #main-container{
+      background: #eeeeee;
+
+  }
+  aside{
+    float: right;
+    max-width: 33%;
+    box-shadow: 2px 2px 2px #afd7e7;
+    padding: 20px;
+    color: white;
+    border-radius: 6px;
+    background: #34bae7;
+  }
+  blockquote{
+    border-color: #14a8e7;
+    // border-top: 1px solid #14a8e7;
+    // border-bottom: 1px solid #14a8e7;
+    font-size: inherit;
+    background: #e3e3e3;
+    color: #222;
+  }
+  ul{
+    margin-bottom: 15px;
+  }
+  .post-header{
+    margin-bottom: 40px;
+    h1{
+      color: #14a8e7;
+      text-align: center;
+      font-weight: bold;
+    }
+    .post-meta{
+      text-align: center;
+      color: #777;
+    }
+  }
+  article.post-content{
+    line-height: 1.4em;
+  }
+  .post-sharing{
+    background: url("/images/slides/testimonials-slides/bg-slides-1920px.jpg") #433c4c no-repeat center center fixed; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover; 
+    color: #ffffff; 
+    font-family: 'Lato', sans-serif; 
+    font-weight: 400; 
+    padding: 20px 0;
+    text-align: center;
+  }
+}

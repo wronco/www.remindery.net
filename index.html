@@ -63,6 +63,7 @@ layout: default
         </p>
       </div>
     </div>
+    
   </div>
 </section>
 <section id="services-section">
@@ -194,8 +195,22 @@ layout: default
     </div>
   </div>
 </section>
-<section id="pricing-section">
+<section id="pricing-section" style="padding-bottom: 0px;">
   {% include pre_signup.html %}
+</section>
+<section id="features">
+  <div class="container">
+    <div class="row clearfix">
+      <h2 style="text-align: center">Tips &amp; Tricks</h2>
+    </div>
+    <div class="row clearfix">
+      {% for post in site.posts limit:3 %}
+        <div class="feature-box col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <h5><a href="{{ post.url }}">{{ post.title }}</a></h5>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
 </section>
 <section id="faq-section">
   {% include faq.html %}
@@ -208,6 +223,7 @@ layout: default
         <a href="mailto:hello@remindery.net">hello@remindery.net</a>
         We'll get back to you right away.
       </h2>
+
       {% comment %}
       <div class="carousel slide" data-interval="false" data-ride="carousel" id="carousel_slide_contact">
         <div class="carousel-inner">

@@ -1,0 +1,23 @@
+---
+layout: page
+permalink: blog/
+---
+<section>
+<div class="container">
+  <div class="row clearfix">
+    <h1 class="section-subtitle services-subtitle">
+      Blog
+    </h1>
+    <div class="row clearfix">
+      {% for post in site.posts limit:3 %}
+        <div class="feature-box col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <h5 style="font-size: 1.5em"><a href="{{ post.url }}">{{ post.title }}</a></h5>
+          {% if post.meta %}
+            <p>{{ post.meta }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+</section>
