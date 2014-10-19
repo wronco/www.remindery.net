@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "SaaS Trial Expiration and Abandoned Carts"
-meta: A new way to think about recapturing prospects whose free trials expire.
+description: A new way to think about recapturing prospects whose free trials expire.
 date: "2014-10-19"
 categories: saas cro optimization
 published: true
